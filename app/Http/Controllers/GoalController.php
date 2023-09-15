@@ -5,6 +5,8 @@ use Illuminate\Http\Request;
 use App\Models\Goal;
 class GoalController extends Controller
 {
+
+    //CRUD GOAL
     
  // CREAR
 
