@@ -14,11 +14,11 @@ class UserSeeder extends Seeder
     {
         User::create([
             'id'=> 1,
-            'name'=> 'Maria',
-            'email'=> 'maria@gmail.com',
-            'password'=>'maria1234',
-            'age'=>30,
-            'weight'=> 55        
+            'name'=> 'Matilda',
+            'email'=> 'mati@gmail.com',
+            'password'=>'mati1234',
+            'age'=>51,
+            'weight'=> 70         
         ]);
 
         // User::create([
@@ -31,12 +31,13 @@ class UserSeeder extends Seeder
         // ]);
 
         // User::create([
-        //     'id'=> 3,
-        //     'name'=> 'Matilda',
-        //     'email'=> 'mati@gmail.com',
-        //     'password'=>'mati1234',
-        //     'age'=>51,
-        //     'weight'=> 70      
+        //          
+                // 'id'=> 3,
+                // 'name'=> 'Maria',
+                // 'email'=> 'maria@gmail.com',
+                // 'password'=>'maria1234',
+                // 'age'=>30,
+                // 'weight'=> 55       
         // ]);
 
         // User::create([

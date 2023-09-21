@@ -26,7 +26,7 @@ class GoalController extends Controller
         }
     }
 
-    // Create
+    // CREATE
     public function store(Request $request){
         $goal = new Goal;
 
@@ -37,9 +37,7 @@ class GoalController extends Controller
 
         $goal->save();
 
-        return response()->json([
-            "message" => "Goal added"
-        ], 201);
+        return response()->json($goal, 201);
     }
 
     //EDIT    
@@ -56,9 +54,7 @@ class GoalController extends Controller
 
             $goal->update();
 
-            return response()->json([
-                "message" => "Goal updated"
-            ], 201);
+            return response()->json($goal, 201);
 
         } else {
 
