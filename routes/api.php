@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\GoalController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\IntakeController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -30,3 +31,6 @@ Route::post('/goals', [GoalController::class, 'store']);
 Route::put('/goals/{id}', [GoalController::class, 'update']);
 Route::delete('/goals/{id}', [GoalController::class, 'destroy']);
 
+//Intake
+Route::get('/intake', [IntakeController::class, 'show']);
+Route::post('/intake', [IntakeController::class, 'store']);

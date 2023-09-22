@@ -6,7 +6,7 @@ use App\Models\Goal;
 class GoalController extends Controller
 {
     
- // CREAR
+ // mostrar
 
     public function show(Request $request){
         // Recojo el parametro ?userId de la peticion HTTP GET del navegador / postman
@@ -79,7 +79,7 @@ class GoalController extends Controller
 
             return response()->json([
                 "message" => "Goal deleted"
-            ], 201);
+            ], 200);
 
         } else {
 
